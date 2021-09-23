@@ -18,7 +18,7 @@ TKN=$(curl $CURL_OPTION "$ROUTER_URL_BASE/login.html" | \
     perl -MMIME::Base64 -ne 'if (/src=".{78}(.*)"/) {print  decode_base64($1)}')
 
 if [ "$TKN" = "" ]; then
-    echo "Error: cannot access to $ROUTER_URL_BASE"
+    echo "Error: cannot access to $ROUTER_URL_BASE/login.html"
     exit 1
 fi
 
@@ -39,6 +39,11 @@ TKN=$(curl $CURL_OPTION "$ROUTER_URL_BASE/advanced.html" \
     grep '<img.*data:' | \
     perl -MMIME::Base64 -ne 'if (/src=".{78}(.*)"/) {print  decode_base64($1)}')
 
+if [ "$TKN" = "" ]; then
+    echo "Error: cannot login to $ROUTER_URL_BASE"
+    exit 1
+fi
+
 TKN=$(curl $CURL_OPTION "$ROUTER_URL_BASE/filter_ip.html" \
   -H "Referer: $ROUTER_URL_BASE/" \
 	  | \
@@ -48,7 +53,7 @@ TKN=$(curl $CURL_OPTION "$ROUTER_URL_BASE/filter_ip.html" \
 curl $CURL_OPTION "$ROUTER_URL_BASE/cgi/cgi_filter_ip.js?_tn=$TKN&_t=$NOW&_=1625895743842" \
   -H "Referer: $ROUTER_URL_BASE/filter_ip.html" \
     | \
-    perl -ne 'if ($_ =~ /.*ARC_FIREWALL_IPFILTER_RULE_0_Action","(.*)"/) { print $1 }'
+    perl -ne 'if ($_ =~ /.*ARC_FIREWALL_IPFILTER_RULE_'$RULE_NO'_Action","(.*)"/) { print $1 }'
 
 TKN=$(curl $CURL_OPTION "$ROUTER_URL_BASE/logout.html" \
      -H "Referer: $ROUTER_URL_BASE/" \
