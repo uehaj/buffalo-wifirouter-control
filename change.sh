@@ -10,7 +10,7 @@ if [ ! -f $CONFIG ]; then
     echo "Error: no config file $CONFIG"
     exit 1
 fi
-source $CONFIG
+. $CONFIG
 
 CURL_OPTION="--noproxy $ROUTER_HOST
 	   --silent
