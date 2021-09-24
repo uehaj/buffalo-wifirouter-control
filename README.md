@@ -75,15 +75,15 @@ ACCEPT
 ```
 # Web interface
 
-Following cgis and index.html are web interfaces of this scripts.
+Following CGIs are web interfaces of this scripts. You can setup web server on your inhouse PC orservers (It is very good idea to run them on Raspberry pi based microserver!)
 
 ```
-accept.cgi
 index.cgi
+accept.cgi
 reject.cgi
 ```
 
-To use this, you setup cgi/fastcgi on your web server (apache or nginx or..) and put index.html like this:
+To use this, setup cgi/fastcgi on your web server (apache or nginx or..) and put index.html like this:
 
 ```
 <!DOCTYPE html>
@@ -94,7 +94,12 @@ To use this, you setup cgi/fastcgi on your web server (apache or nginx or..) and
 </html>
 ```
 
+Change URL value in `<meta ... URL= >` element if needed.
+In this version, Rule Number cannot specify through web interface. RULE_NO field of .env file is used always.
+
 ## Screenshot
+
+Following are web interface. You can bookmark or save this on your browser. It is useful you put them in smartphone home screen.
 
 <img src="https://i.imgur.com/MpkTV70_d.webp?maxwidth=760&fidelity=grand" alt="web intarface image"/>
 
