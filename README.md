@@ -3,9 +3,9 @@ This is a set of scripts for control Buffalo Wifi router series.
 This script change [Security]-[IP Filter] setting of Buffalo series WiFi-Router
 through command line script.
 
-You can control your devices network access.
+You can control your devices network access of devices, e.g. PC, smartphone, smart speakers, Game devices like Nintendo switch, or any devices connect to internet throught Buffalo Wifi Router.
 
-It is needed IP Addresses are fixed because IP-Filter rules of Buffalo settions are distinguishes with IP address.
+Therea is a condition for the devices to control is those devieces's IP Addresses are be fixed because IP-Filter rules of Buffalo settions are distinguishes devices with IP address.
 
 # Setup
 
