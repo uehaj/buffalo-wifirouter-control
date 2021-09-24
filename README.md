@@ -97,9 +97,9 @@ To use this, you setup cgi/fastcgi on your web server (apache or nginx or..) and
 
 <img src="https://i.imgur.com/MpkTV70_d.webp?maxwidth=760&fidelity=grand" alt="web intarface image"/>
 
-# Crontab Example
+# Cotrol with crontab
 
-It is useful you specify these script on crontab. 
+It is useful you specify these scripts on crontab. 
 
 ### Example:
 
