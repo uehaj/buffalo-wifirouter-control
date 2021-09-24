@@ -5,9 +5,9 @@ echo ''
 
 cat <<EOF
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <title>Change IP Filter Setting</title>
 <style>
     body {

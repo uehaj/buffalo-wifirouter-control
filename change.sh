@@ -15,7 +15,7 @@ fi
 CURL_OPTION="--noproxy $ROUTER_HOST
 	   --silent
 	   -H 'Cookie: lang=8; mobile=true; url=filter_ip.html'
-	   -compressed
+	   --compressed
 	   --insecure"
 
 TKN=$(curl $CURL_OPTION $ROUTER_URL_BASE/login.html | \
