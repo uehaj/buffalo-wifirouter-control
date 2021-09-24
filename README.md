@@ -28,6 +28,8 @@ To get the value:
 - Input "calcMD5('xxxx')" on console command line in browser, and press ENTER.
 - Copy the output value.
 
+<img src="https://i.imgur.com/n2YsyVX_d.webp?maxwidth=1520&fidelity=grand" alt="chrome developper tool">
+
 And then paste it to PWS field in the .env file. Double quote or quote are not required here.
 
 `RULE_NO` field is default rule number of IP Filter settiong. This is used when you omit the Rule No command line parameter fo monitor.sh and change.sh scripts.
