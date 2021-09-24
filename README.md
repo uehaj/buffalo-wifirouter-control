@@ -95,7 +95,7 @@ To use this, you setup cgi/fastcgi on your web server (apache or nginx or..) and
 
 ## Screenshot
 
-[Screenshot](https://i.imgur.com/MpkTV70_d.webp?maxwidth=760&fidelity=grand)
+<img src="https://i.imgur.com/MpkTV70_d.webp?maxwidth=760&fidelity=grand" alt="web intarface image"/>
 
 # Crontab Example
 
