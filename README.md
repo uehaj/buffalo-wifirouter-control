@@ -1,24 +1,23 @@
-This is a set of scripts for control Buffalo Wifi router series.
+This is a set of scripts for control Buffalo WiFi router series.
 
-This script change [Security]-[IP Filter] setting of Buffalo series WiFi-Router
-through command line script.
+This script change or monitor [Security]-[IP Filter] setting of Buffalo series WiFi router through command line script.
 
-You can control your devices network access of devices, e.g. PC, smartphone, smart speakers, Game devices like Nintendo switch, or any devices connect to internet throught Buffalo Wifi Router.
+You can control your devices network access of devices, e.g. PC, smartphone, smart speakers, Game devices like Nintendo switch, or any devices connect to internet throught Buffalo WiFi router.
 
-Therea is a condition for the devices to control is those devieces's IP Addresses are be fixed because IP-Filter rules of Buffalo settions are distinguishes devices with IP address.
+One equirement for the devices to be controled is, those devices's IP Addresses are be fixed because IP-Filter rules of Buffalo settions distinguishes devices with its IP addresses.
 
 # Setup
 
-You have to copy .env.sample to .env on the same directory which includes monior.sh and change.sh, and edit it following way.
+You have to copy .env.sample to .env on the same directory which includes monior.sh and change.sh, and edit it with following way.
 
-```
+```.env
 ROUTER_HOST=192.168.11.1                   # This is the factory default
 ROUTER_URL_BASE=http://$ROUTER_HOST        # don't edit
 PWS=<Hash valeu of your password.>
 RULE_NO=0
 ```
 
-PWS field is important and you have to edit it. It is a hash value of password of your admin account of your Buffalo wifi router.
+`PWS` field is important and you have to edit it. It is a hash value of password of your admin account of your Buffalo wifi router.
 To get the actual hash value, you have to access Wifi Router login page through browser(Chrome, Firefox, Edge and so on..)'s developper tool.
 This value is a kind of MD5 buf it requries special initialization value so you cannot get the hash value by generic md5 hash commands.
 
@@ -31,7 +30,7 @@ To get the value:
 
 And then paste it to PWS field in the .env file. Double quote or quote are not required here.
 
-RULE_NO field is default rule number of IP Filter settiong. This is used when you omit the Rule No command line parameter fo monitor.sh and change.sh scripts.
+`RULE_NO` field is default rule number of IP Filter settiong. This is used when you omit the Rule No command line parameter fo monitor.sh and change.sh scripts.
 
 ## monitor.sh
 
