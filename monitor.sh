@@ -7,6 +7,19 @@ if [ ! -f $CONFIG ]; then
 fi
 . $CONFIG
 
+case "$1" in
+    "" )
+	;;
+    "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9"  )
+	RULE_NO=$1
+	;;
+    *)
+	echo "usage: $0 [0|1...]"
+	exit 1
+esac
+
+echo "Monitor Rule $RULE_NO"
+
 CURL_OPTION="--noproxy $ROUTER_HOST
 	   --silent
 	   -H 'Cookie: lang=8; mobile=true; url=filter_ip.html'
