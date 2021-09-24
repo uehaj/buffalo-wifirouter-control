@@ -69,8 +69,10 @@ If you ommit rule number, RULE_NO field value in .env are used.
 
 ```
 $ ./monitor.sh
+Monitor Rule 0
 REJECT
 $ ./monitor.sh 3
+Monitor Rule 3
 ACCEPT
 ```
 # Web interface
