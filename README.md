@@ -77,7 +77,7 @@ ACCEPT
 ```
 # Web interface
 
-Following CGIs are web interfaces of this scripts. You can setup web server on your inhouse PC orservers (It is very good idea to run them on Raspberry pi based microserver!)
+Following CGIs are web interfaces of this scripts. You can setup web server on your PC or home servers in your LAN (It is very good idea to run them on Raspberry pi based microserver!)
 
 ```
 index.cgi
