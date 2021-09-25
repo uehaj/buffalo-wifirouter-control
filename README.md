@@ -5,7 +5,6 @@ This script change or monitor [Security]-[IP Filter] setting of Buffalo series W
 You can control your devices, e.g. PC, smartphone, smart speakers, Game devices like Nintendo switch, or any devices connect to the internet throught your Buffalo WiFi router.
 
 One requirement for the devices to be controled is, those devices's IP Addresses are be fixed because IP-Filter rules of Buffalo settions distinguishes devices with its IP addresse
-
 s. But fix ip address with DHCP setting is easy.
 
 # Setup
