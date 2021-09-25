@@ -14,7 +14,7 @@ You have to copy .env.sample to .env on the same directory which includes monior
 ```.env
 ROUTER_HOST=192.168.11.1                   # This is the factory default
 ROUTER_URL_BASE=http://$ROUTER_HOST        # don't edit
-PWS=<Hash valeu of your password.>
+PWS=<Hash value of admin password.>
 RULE_NO=0
 ```
 
