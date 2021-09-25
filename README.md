@@ -26,7 +26,7 @@ To get the value:
 - With your browser acceess the wifi router login page (Factory default value of the router might be http://192.168.11.1).
 - Open devloper tool on your browser.
 - Select the [Console] tab.
-- Input "calcMD5('xxxx')" for pasaword xxxx on console command line in browser, and press ENTER.
+- Input "calcMD5('xxxx')" for password xxxx on console command line in browser, and press ENTER.
 - Copy the output value.
 
 <img src="https://i.imgur.com/n2YsyVX_d.webp?maxwidth=1520&fidelity=grand" alt="chrome developper tool">
