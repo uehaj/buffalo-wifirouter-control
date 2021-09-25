@@ -20,7 +20,7 @@ RULE_NO=0
 
 `PWS` field is important and you have to edit it. It is a hash value of password of your admin account of your Buffalo wifi router.
 To get the actual hash value, you have to access Wifi Router login page through browser(Chrome, Firefox, Edge and so on..)'s developper tool.
-This value is a kind of MD5 buf it requries special initialization value so you cannot get the hash value by generic md5 hash commands.
+This value is a kind of MD5 but it requries special initialization value so you cannot get the hash value by generic md5 hash commands.
 
 To get the value:
 - With your browser acceess the wifi router login page (Factory default value of the router might be http://192.168.11.1).
