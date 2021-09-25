@@ -45,6 +45,7 @@ usage: monitor.sh [0|1...]
 
 where [0|1..] is a rule number.
 
+If you ommit rule number, RULE_NO field value in .env are used.
 ### Example:
 
 ```
