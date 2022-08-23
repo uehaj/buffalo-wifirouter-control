@@ -4,8 +4,7 @@ This script change or monitor [Security]-[IP Filter] setting of Buffalo series W
 
 You can control your devices, e.g. PC, smartphone, smart speakers, Game devices like Nintendo switch, or any devices connect to the internet throught your Buffalo WiFi router.
 
-One requirement for the devices to be controled is, those devices's IP Addresses are be fixed because IP-Filter rules of Buffalo settions distinguishes devices with its IP addresse
-s. But fix ip address with DHCP setting is easy.
+One requirement for the devices to be controled is, those devices's IP Addresses should be fixed because IP-Filter rules of Buffalo settings distinguishes devices with its IP addresses.
 
 # Setup
 
@@ -33,7 +32,7 @@ To get the value:
 
 And then paste it to PWS field in the .env file. Double quote or quote are not required here.
 
-`RULE_NO` field is default rule number of IP Filter settiong. This is used when you omit the Rule No command line parameter fo monitor.sh and change.sh scripts.
+`RULE_NO` field is default rule number of IP Filter settiong. This is used when you omit the Rule No command line parameter for monitor.sh and change.sh scripts.
 
 ## monitor.sh
 
